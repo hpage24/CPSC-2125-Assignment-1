@@ -1,0 +1,35 @@
+header{
+  background-color: aqua
+}
+
+footer{
+  color: blue
+}
+
+nav{
+  color: coral
+}
+
+main{
+  color: crimson
+}
+
+li:nth-child(odd){
+  background-color: rgb(34, 208, 252)
+}
+
+th{
+  color: white;
+  background-color: black;
+}
+
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+table{
+  font-size: 1.5em;
+  font-family: serif;
+  color: navy
+}
