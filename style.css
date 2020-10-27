@@ -33,3 +33,11 @@ table{
   font-family: serif;
   color: navy
 }
+
+ul li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
