@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Page 3</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class = "wrapper">
+    <header class = "box header"> 
+      <img src= "images/banner.jpeg">
+    </header>
+
+    <nav class = "box sidebar">
+      <ul>
+        <li><a href="index.html">Home</a></li> <br>
+        <li><a href="page1.html">Page 1</a></li> <br>
+        <li><a href="page2.html">Page 2</a></li> <br>
+        <li><a href="page3.html">Page 3</a></li> <br>
+        <li><a href="https://www.columbusstate.edu"> CSU Main Page</a></li>
+      </ul>
+    </nav>
+
+    <main class = "box content">
+      <form name = "myForm" action = "https://webdevbasics.net/scripts/yoga.php" onsubmit = "return validateForm()" method = "post">
+        <label for="fname">First name:</label><br>
+        <input type = "text" id="fname" name="fname" placeholder = "John" size = 20 maxlength = 50 required><br>
+        <label for="lname">Last name:</label><br>
+        <input type = "text" id="lname" name="lname" placeholder = "Doe" size = 20 maxlength = 50 required><br>
+
+        <label for="email">Email:</label><br>
+        <input type = "email" id="myemail" name="myemail" placeholder = "example@example.com" required><br>
+
+        <label for = "password">Password:</label><br>
+        <input type = "password" id = "password" name = "password" required><br>
+
+        <label for = "tel"> Phone Number:</label><br>
+        <input type = "tel" id = "phonenum" name = "phonenum" placeholder = "111-222-3333" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength = 12 required><br>
+
+        <label for="state">State:</label><br>
+        <select id = "state">
+          <option>GA</option>
+          <option>AL</option>
+          <option>FL</option>
+        </select>
+
+        <h3> Marital Status: </h3>
+        <input type = "radio" id = "single" name = "marital" value = "single" required>
+        <label for="single">Single</label><br>
+        <input type = "radio" id = "married" name = "marital" value = "married">
+        <label for="married">Married</label><br>
+
+        <h3>Skills:</h3>
+        <input type="checkbox" id="skill1" name="skill1" value="skill1">
+        <label for="skill1"> Python </label><br>
+        <input type="checkbox" id="skill2" name="skill2" value="skill2">
+        <label for="skill2">Java</label><br>
+        <input type="checkbox" id="skill3" name="skill3" value="skill3">
+        <label for="skill3">HTML</label><br><br>
+
+        <label for = "comments">Comments:</label><br>
+        <textarea id = "comments" name = "comments"></textarea><br>
+        
+        <input type = "submit" value="Submit">
+      </form>
+    </main>
+    <aside class = "box aside">
+      We will use these attributes: size, maxlength, pattern, placeholder, and required. Use the placeholder to add a hint for the user to the input fields that support it. Add the required attribute to the fields on your form that support it. Test the form: can you submit without filling out the required fields? Add a size attribute to your first and last name input fields. What happens? Add a maxlength to your first and last name input fields. To test, set it to 2. What happens? Change the value back to a 50 for example. The maxlength attribute can serve as first-line security measure. If the data from your first and last name input boxes is destined for a database field of 50 characters, then setting the maxlength to the same value is good practice. Add a phone number field to your form. Add a placeholder hint and implement the pattern attribute as shown in the example. What you see there is a regular expression or regex. Add a JavaScript form validation function to the form. See example here: https://www.w3schools.com/js/js_validation.asp Note the “onsubmit” event. You will validate that the password the user enters is at least 8 characters long. Test your form validation. Is the user forced to enter an 8-character password? You can imagine that for real password validation, you would also check whether uppercase letters, numbers, and certain symbols are used in the password. That would require a regex.
+    </aside>
+
+    <footer class = "box footer"> 
+      <p>Phone: 123-456-7890</p>
+      <p>Hugh Page</p>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

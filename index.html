@@ -7,20 +7,22 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header> 
+    <div class = "wrapper">
+    <header class = "box header"> 
       <img src= "images/banner.jpeg">
     </header>
-
-    <nav>
+    
+    <nav class = "box sidebar">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page1.html">Page 1</a></li>
-        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="index.html">Home</a></li> <br>
+        <li><a href="page1.html">Page 1</a></li> <br>
+        <li><a href="page2.html">Page 2</a></li> <br>
+        <li><a href="page3.html">Page 3</a></li> <br>
         <li><a href="https://www.columbusstate.edu">CSU Main Page</a></li>
       </ul>
     </nav>
 
-    <main>
+    <main class = "box content">
       <h1>Welcome</h1>
       <h2>Welcome</h2>
       <h3>Welcome</h3>
@@ -29,10 +31,15 @@
       <h6>Welcome</h6>
     </main>
 
-    <footer> 
+    <aside class = "box aside">
+      Use semantic tags to divide the page into these logical sections: header, nav, main, and footer <br><br> Add a banner-type image to the header semantic tag. Note that you have to include the images folder in the path. <br><br> In the nav sematic tag, define a navigation for the Assignments 1 site including Home, Page 1 and Page 2, and CSU’s main page. <br><br> Add information to the footer: contact info, name, etc. You can use fictional business info. <br><br> This index page is now your site template. Copy it to two additional files so they are all the same so far. <br><br> Create page1.html and page2.html. In the main, welcome the user to your site using <code>h1</code> - <code>h6</code>, <code>p</code> tags.
+    </aside>
+
+    <footer class = "box footer"> 
       <p>Phone: 123-456-7890</p>
       <p>Hugh Page</p>
     </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
